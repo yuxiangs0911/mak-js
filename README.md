@@ -1,1 +1,1 @@
-﻿
+﻿Base Javascript Library
