@@ -1,7 +1,9 @@
 {
-	"version": "1.0.0",
-	"name": "ASP.NET",
-	"private": true,
-	"devDependencies": {
-	}
+  "name": "mak",
+  "version": "1.0.0",
+  "main": "dist/mak.js",
+  "devDependencies": {
+    "grunt": "0.4.5",
+    "grunt-bowercopy": "1.2.3"
+  }
 }

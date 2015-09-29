@@ -1,6 +1,10 @@
 {
-	"name": "mak",
-	"private": true,
-	"dependencies": {
-	}
+  "name": "mak-js",
+  "dependencies": {
+    "jquery": "*"
+  },
+  "devDependencies": {
+    "requirejs": "2.1.20",
+    "jquery": "*"
+  }
 }
