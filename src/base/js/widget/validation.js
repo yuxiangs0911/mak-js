@@ -1,15 +1,13 @@
-﻿/// <reference path="../../../_references.js" />
-
-define(["jquery", "base", "tip", "event"], function ($, base, tip, event) {
+﻿define(["jquery", "../base", "./tip", "../core/event", "../util/validation"], function ($, base, tip, event, valid) {
     var validation = function (selector, settings) {
         this.$form = $(selector);
         this.settings = $.extend({
             mode: "tip", // inline
             tipSelector: ".tip",
-            tipSuccessClass: "tip-success iconfont icon-duigou",
+            tipSuccessClass: "tip-success",
             tipErrorClass: "tip-error",
-            itemSelector: ".J_validItem",
-            inputSelecot: ".J_validInput"
+            itemSelector: ".js-valid-item",
+            inputSelecot: ".js-valid-input"
         }, settings, this.$form.data());
         this.event = new event(this);
         this._init();
@@ -124,7 +122,7 @@ define(["jquery", "base", "tip", "event"], function ($, base, tip, event) {
             }
             // mobile
             if ($input.filter(base.format(this.validList.format, this.validList.mobile)).length) {
-                if (!base.isMobile(val)) {
+                if (!valid.isMobile(val)) {
                     this.show($input, "error", this.validList.mobile);
                     return false;
                 }

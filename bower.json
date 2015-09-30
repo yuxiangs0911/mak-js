@@ -1,7 +1,8 @@
 {
   "name": "mak-js",
   "dependencies": {
-    "jquery": "*"
+    "jquery": "*",
+    "blueimp-md5": "1.1.1"
   },
   "devDependencies": {
     "requirejs": "2.1.20",
