@@ -1,5 +1,16 @@
 ﻿define(function () {
-    // Date
+    var datetime = {};
+
+    // 创建unix日期
+    datetime.createUnixDate = function (unixTime) {
+        var d = new Date();
+        unixTime = String(unixTime);
+        if (unixTime.length === 10) {
+            unixTime += "000";
+        }
+        return d.setTime(unixTime);
+    };
+
     // 格式化为日常日期
     // 默认：yyyy-MM-dd hh:mm:ss
     Date.prototype.format = function (format) {
@@ -33,4 +44,5 @@
     Date.prototype.formatTime = function () {
         return this.format("hh:mm:ss");
     };
+    return datetime;
 });
