@@ -1,4 +1,4 @@
-﻿/// <reference path="../../../js/_references.js" />
+﻿/// <reference path="../../../_references.js" />
 
 define(["jquery", "base", "tip", "event"], function ($, base, tip, event) {
     var validation = function (selector, settings) {
