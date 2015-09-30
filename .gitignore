@@ -29,10 +29,6 @@ _site
 nbproject
 Thumbs.db
 
-# Komodo
-.komodotools
-*.komodoproject
-
 # Folders to ignore
 bower_components
 node_modules
