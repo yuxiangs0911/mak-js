@@ -1,0 +1,63 @@
+﻿div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: {
+        size: $font-size-base;
+        family: $font-family-base;
+    }
+
+    line-height: $line-height;
+    color: $body-color;
+    background-color: $body-bg;
+    overflow-x: hidden;
+}
+
+// Font
+em,
+strong,
+i {
+    font-weight: normal;
+    font-style: normal;
+    line-height: inherit;
+}
+
+h1 {
+    font-size: $font-size-h1;
+}
+
+h2 {
+    font-size: $font-size-h2;
+}
+
+h3 {
+    font-size: $font-size-h3;
+}
+
+h4 {
+    font-size: $font-size-h3;
+}
+
+// Links
+a {
+    color: $link-color;
+    text-decoration: none;
+}
+
+
+// Images
+img {
+    vertical-align: middle;
+}
+
+// Forms
+textarea {
+    resize: vertical;
+}
+
+// List
+ol, ul {
+    list-style: none;
+}

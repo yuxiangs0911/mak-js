@@ -1,0 +1,64 @@
+﻿.none {
+    display: none;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.tl {
+    text-align: left;
+}
+
+.tr {
+    text-align: right;
+}
+
+.tc {
+    text-align: center;
+}
+
+.clearfix {
+    @include clearfix();
+}
+
+.flc {
+    @include clearfix();
+
+    > li {
+        @extend .fl;
+    }
+}
+
+// spacing
+@for $i from 1 through 20 {
+    $n: $i * 5;
+    $v: $n + px !important;
+
+    @each $d in m,p {
+
+        .#{$d}t#{$n} {
+            margin-top: $v;
+        }
+
+        .#{$d}r#{$n} {
+            margin-right: $v;
+        }
+
+        .#{$d}b#{$n} {
+            margin-bottom: $v;
+        }
+
+        .#{$d}l#{$n} {
+            margin-left: $v;
+        }
+    }
+}

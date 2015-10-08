@@ -1,0 +1,25 @@
+﻿@mixin clearfix {
+    &:before,
+    &:after {
+        content: " "; // 1
+        display: table; // 2
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+@mixin hide-text() {
+    overflow: hidden;
+    text-indent: 101%;
+    white-space: nowrap;
+}
+
+@mixin ellipsis($width: 100%) {
+    max-width: $width;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
